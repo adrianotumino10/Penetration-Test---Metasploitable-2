@@ -1,40 +1,56 @@
-# Penetration Test - Metasploitable 2
+# Penetration Testing — Metasploitable 2 (Lab)
 
-## 🎯 Descrizione Progetto
-Progetto personale di penetration testing ethical su ambiente controllato.
+**Autore:** Adriano Tumino  
+**Ambiente:** Laboratorio isolato Metasploitable 2 (Ubuntu 8.04)  
+**Metodo:** PTES Standard
 
-## ⚠️ Avviso Importante
-**TUTTE LE INFORMAZIONI SENSIBILI SONO STATE ANONIMIZZATE**
-- IP rimossi o sostituiti con placeholder
-- Credenziali modificate per privacy
-- Ambiente isolato e controllato
+## ⚠️ Disclaimer e Avviso di Sicurezza
+**ATTENZIONE**: Questo repository contiene documentazione di penetration test eseguiti **esclusivamente** sulla VM Metasploitable 2 in ambiente di laboratorio isolato.
+### 🚫 Utilizzo Consentito
+- Studio e apprendimento
+- Ricerca accademica
+- Formazione sicurezza informatica
 
-## 🔍 Vulnerabilità Identificate
-### Critiche (10/10)
-1. **Backdoor VSFTPD 2.3.4** - Accesso root remoto
-2. **SQL Injection in DVWA** - Estrazione dati sensibili
-### Alte (8/10)
-3. **Credenziali in Plaintext** - File esposti nel filesystem
-4. **Servizi Obsoleti** - Multiple versioni vulnerabili
+### 🚫 Utilizzo Vietato
+- Attacchi a sistemi reali
+- Attività non autorizzate
+- Utilizzo malevolo
 
-## 📊 Dati Estratti
-### Hash Password Decifrati
-admin:5f4dcc3b5aa765d61d8327deb882cf99 → password
-gordonb:e99a18c428cb38d5f260853678922e03 → abc123
+### ⚖️ Aspetti Legali
+Tutte le attività di test devono essere autorizzate. La legislazione italiana (Art. 615-ter c.p.) punisce l'accesso abusivo a sistemi informatici.
+**L'autore non si assume alcuna responsabilità per l'uso improprio di queste informazioni.**
 
-### Web Applications Testate
-- DVWA (Damn Vulnerable Web App)
-- Mutillidae II
-- TWiki
-- phpMyAdmin
+## Scopo del progetto
+Repository che raccoglie il lavoro di penetration testing condotto su un'istanza Metasploitable 2 per scopi didattici: scansioni, analisi vulnerabilità, PoC e raccomandazioni per il remediation.
 
-## 🛡️ Raccomandazioni
-1. Aggiornamento tutti i software
-2. Password policy più forte
-3. Input validation
-4. Rimozione servizi non necessari
+## Struttura del repository
+/Penetration-Testing-Metasploitable2
+├─ README.md
+├─ report/
+│ └─ Report_Completo.md
+├─ Scansioni/
+│ ├─ scansione_completa.txt
+│ └─ Scansione_servizi_SMB.txt
+├─ Vulnerabilita/
+│ ├─ Critiche/
+│ │ ├─ Vuln_Critiche_Bindshell1524.txt
+│ │ └─ Exploit_vsftpd/
+│ │ ├─ Exploit_Readme.txt
+│ └─ Alte/
+│ ├─ Vuln_Alte_BindObsoleto.txt
+│ └─ Vuln_Alte_SmbAnonimoAccess.txt
+├─ WEB/
+│ ├─ SQL_Injection_Recap.txt
+│ └─ (screenshots + readme)
+│ ├─ XSS/
+│ └─ (screenshots + readme)
+├─ Metodologia.txt
+└─ Raccomandazioni.txt
 
-## 📁 Struttura Repository
 
-## ⚖️ Considerazioni Etiche
-Tutte le attività svolte per scopi educativi in ambiente controllato.
+## Come navigare
+- Leggi prima `report/Report_Completo.md` per sintesi e priorità.  
+- Approfondisci i singoli casi nelle sottocartelle `Vulnerabilita/`.  
+- Gli artefatti (output nmap, screenshot) si trovano in `Scansioni/` e `WEB/`. 
+
+
