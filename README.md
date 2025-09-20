@@ -24,7 +24,8 @@ Tutte le attività di test devono essere autorizzate. La legislazione italiana (
 Repository che raccoglie il lavoro di penetration testing condotto su un'istanza Metasploitable 2 per scopi didattici: scansioni, analisi vulnerabilità, PoC e raccomandazioni per il remediation.
 
 ## Struttura del repository
-Penetration-Testing-Metasploitable2/
+Penetration-Testing-Metasploitable2
+
 ├─ README.md
 
 ├─ report/
