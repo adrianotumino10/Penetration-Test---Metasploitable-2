@@ -26,9 +26,13 @@ Repository che raccoglie il lavoro di penetration testing condotto su un'istanza
 ## Struttura del repository
 Penetration-Testing-Metasploitable2/
 ├─ README.md
+
 ├─ report/
+
 │ └─ Report_Completo.md
+
 ├─ Scansioni/
+
 │ ├─ scansione_completa.txt
 │ └─ Scansione_servizi_SMB.txt
 ├─ Vulnerabilita/
