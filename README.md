@@ -24,28 +24,53 @@ Tutte le attività di test devono essere autorizzate. La legislazione italiana (
 Repository che raccoglie il lavoro di penetration testing condotto su un'istanza Metasploitable 2 per scopi didattici: scansioni, analisi vulnerabilità, PoC e raccomandazioni per il remediation.
 
 ## Struttura del repository
-/Penetration-Testing-Metasploitable2
-├─ README.md
-├─ report/
-│ └─ Report_Completo.md
-├─ Scansioni/
-│ ├─ scansione_completa.txt
-│ └─ Scansione_servizi_SMB.txt
-├─ Vulnerabilita/
-│ ├─ Critiche/
-│ │ ├─ Vuln_Critiche_Bindshell1524.txt
-│ │ └─ Exploit_vsftpd/
-│ │ ├─ Exploit_Readme.txt
-│ └─ Alte/
-│ ├─ Vuln_Alte_BindObsoleto.txt
-│ └─ Vuln_Alte_SmbAnonimoAccess.txt
-├─ WEB/
-│ ├─ SQL_Injection_Recap.txt
-│ └─ (screenshots + readme)
-│ ├─ XSS/
-│ └─ (screenshots + readme)
-├─ Metodologia.txt
-└─ Raccomandazioni.txt
+Penetration-Testing-Metasploitable2/
+│
+├── 📄 README.md                       # Questo file
+├── 📁 report/
+│   └── 📄 Report_Completo.md          # Report sintetico finale
+│
+├── 📁 01_Scansioni/
+│   ├── 📄 scansione_completa.txt      # Scansione nmap -p-
+│   ├── 📄 Scansione_servizi_SMB.txt   # Scansione SMB approfondita
+│   └── 📄 README_Scansioni.md         # Metodologia scansioni
+│
+├── 📁 02_Vulnerabilita/
+│   ├── 📁 CRITICHE/
+│   │   ├── 📄 Vuln_Bindshell_1524.md          # Bindshell porta 1524
+│   │   ├── 📄 Vuln_VSFTPD_Backdoor.md         # Backdoor vsftpd
+│   │   └── 📁 Exploit_vsftpd/
+│   │       ├── 📄 vsftpd_234_exploit.py       # Script exploit
+│   │       └── 📄 README_Exploit.md           # Documentazione exploit
+│   │
+│   ├── 📁 ALTE/
+│   │   ├── 📄 Vuln_BIND_Obsoleto.md           # BIND 9.4.2 obsoleto
+│   │   └── 📄 Vuln_SMB_Anonimo_Access.md      # Accesso anonimo SMB
+│   │
+│   └── 📁 MEDIE/
+│       ├── 📄 Vuln_SSH_Enumeration.md         # Enumerazione SSH
+│       └── 📄 Vuln_Web_App.md                 # Vulnerabilità web
+│
+├── 📁 03_Web_Vulnerabilities/
+│   ├── 📁 SQL_Injection/
+│   │   ├── 📄 SQL_Injection_Report.md         # Report SQLi
+│   │   ├── 📄 payloads_sql.txt                # Payload utilizzati
+│   │   └── 📁 screenshots/
+│   │       └── 📄 sql_injection_success.png   # Screenshot proof
+│   │
+│   ├── 📁 XSS/
+│   │   ├── 📄 XSS_Report.md                   # Report XSS
+│   │   ├── 📄 payloads_xss.txt                # Payload XSS
+│   │   └── 📁 screenshots/
+│   │       └── 📄 xss_success.png             # Screenshot proof
+│   │
+│   └── 📄 Credenziali_Trovate.md              # Credenziali scoperte
+│
+├── 📁 04_Metodologia/
+│   └── 📄 Metodologia_PTES.md                 # Standard PTES completo
+│
+├── 📁 05_Raccomandazioni/
+│   └── 📄 Raccomandazioni_Remediation.md      # Piano di remediation
 
 
 ## Come navigare
