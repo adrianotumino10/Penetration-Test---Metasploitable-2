@@ -34,21 +34,35 @@ Penetration-Testing-Metasploitable2/
 ├─ Scansioni/
 
 │ ├─ scansione_completa.txt
+
 │ └─ Scansione_servizi_SMB.txt
+
 ├─ Vulnerabilita/
+
 │ ├─ Critiche/
+
 │ │ ├─ Vuln_Critiche_Bindshell1524.txt
+
 │ │ └─ Exploit_vsftpd/
+
 │ │ ├─ Exploit_Readme.txt
-│ │ └─ (exploit_py_removed_or_sanitized)
+
 │ └─ Alte/
+
 │ ├─ Vuln_Alte_BindObsoleto.txt
+
 │ └─ Vuln_Alte_SmbAnonimoAccess.txt
+
 ├─ WEB/
+
 │ ├─ SQL_Injection_Recap.txt
+
 │ └─ XSS/
+
 │ └─ (screenshots + readme)
+
 ├─ Metodologia.txt
+
 └─ Raccomandazioni.txt
 
 
